@@ -8,6 +8,16 @@ Logic around the Australian Government Rebate tiers.
 
 ## Example
 
+    var agr = require('aus-gov-rebate')(rebateDataProbablyRetrievedFromTheBackendAsJSONInOrderToKeepAllTheLogicAllInOneSpot);
+
+    var tier = agr.getTier(0);
+
+    console.log(
+        tier.getName(),
+        tier.getSalary(),
+        tier.getPercentage(65)
+    );
+
 ## API
 
 ### AGR.getTier(tier : String|Number) : Tier
