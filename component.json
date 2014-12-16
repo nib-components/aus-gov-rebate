@@ -1,0 +1,4 @@
+{
+  "name": "aus-gov-rebate",
+  "scripts": ["index.js", "lib/tier.js"]
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script src="build/build.js"></script>
+    <script>
+
+        var agr = require('aus-gov-rebate')({
+            Tier0: {
+                Percentages: {
+                    Age65To69: {
+                        Value: 12
+                    }
+                }
+            }
+        });
+
+        var tier = agr.getTier(0);
+
+        console.log(tier.getName(), tier.getSalary(), tier.getPercentage(65));
+
+    </script>
+</body>
+</html>
