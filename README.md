@@ -6,6 +6,11 @@ Logic around the Australian Government Rebate tiers.
 
     component install --save nib-components/aus-gov-rebate
 
+## Test
+
+    npm install -g mocha
+    mocha
+
 ## Example
 
     var agr = require('aus-gov-rebate')(rebateDataProbablyRetrievedFromTheBackendAsJSONInOrderToKeepAllTheLogicAllInOneSpot);
