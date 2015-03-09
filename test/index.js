@@ -69,6 +69,27 @@ describe('AGR Tier', function() {
       });
     });
 
+    describe('for partner', function() {
+
+      it('should return the percentage for the age', function() {
+        var tier = AGR.getTier('Tier1');
+
+        var values = [
+          {age: 0, percentage: 19.36},
+          {age: 64, percentage: 19.36},
+          {age: 65, percentage: 24.200},
+          {age: 69, percentage: 24.200},
+          {age: 70, percentage: 29.04}
+        ];
+
+        for (var i=0; i<values.length; ++i) {
+          assert.equal(values[i].percentage, tier.getPercentage(64, values[i].age));
+        }
+
+      });
+
+    });
+
   });
 
 });
