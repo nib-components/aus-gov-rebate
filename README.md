@@ -39,10 +39,11 @@ Get the tier name e.g. `Tier0`
 
 Get the tier salary e.g. `{min: 0, max: 0}`
 
-### Tier.getPercentage(age : Number) : Number
+### Tier.getPercentage(age : Number, partnerAge : Number) : Number
 
 Get the tier rebate percentage e.g. `19.36`
 
 - `age` - The age of the policy holder in years
+- `partnerAge` - The age of the partner in years (optional)
 
 
