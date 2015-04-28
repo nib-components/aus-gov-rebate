@@ -45,5 +45,6 @@ Get the tier rebate percentage e.g. `19.36`
 
 - `age` - The age of the policy holder in years
 - `partnerAge` - The age of the partner in years (optional)
+- The default age range is under-65
 
 
