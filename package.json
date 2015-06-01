@@ -1,0 +1,9 @@
+{
+  "name": "@nib-components/aus-gov-rebate",
+  "version": "0.1.2",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-components/aus-gov-rebate.git"
+  }
+}
